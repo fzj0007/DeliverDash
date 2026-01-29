@@ -1,5 +1,5 @@
 # Delivery Dash - Complete 2D Game Development Tutorial
-## CS 4700: Game Design Studio 4 | Mini-Project 1
+## CS 4700: Game Dev | Mini-Project 1
 
 ---
 
@@ -16,12 +16,8 @@
 - UI implementation
 - Game state management
 
-**Estimated Time**: 8-10 hours
-
----
 
 ## **Section 1: Project Setup & Introduction**
-*Duration: ~10 minutes*
 
 ### Learning Objectives
 - Create a new Unity 2D project
@@ -33,18 +29,13 @@
 1. **Create New Project**
    - Open Unity Hub
    - Click "New Project"
-   - Select "2D (Core)" template
+   - Select "2D (Build-In Render Pipeline)" template
    - Name: "DeliveryDash"
    - Location: Choose your preferred directory
    - Click "Create Project"
 
-2. **Configure Project Settings**
-   - Go to Edit → Project Settings → Player
-   - Set Company Name (your name)
-   - Set Product Name: "Delivery Dash"
-   - Set Default Icon (optional)
 
-3. **Organize Project Structure**
+2. **Organize Project Structure**
    - In Project window, create folders:
      - `Scenes` (for game levels)
      - `Scripts` (for C# code)
@@ -53,25 +44,14 @@
      - `Materials` (for physics materials)
      - `UI` (for user interface elements)
 
-4. **Save Initial Scene**
-   - File → Save As
-   - Name: "Level1"
-   - Save in Scenes folder
-
----
 
 ## **Section 2: Introducing Methods**
-*Duration: ~15 minutes*
 
 ### Learning Objectives
-- Understand what methods are and why they're useful
 - Learn about Unity's built-in methods (Start, Update)
 - Create your first script
 
 ### Conceptual Overview
-
-**What is a Method?**
-A method is a reusable block of code that performs a specific task. Think of it like a recipe - it's a set of instructions that can be followed whenever needed.
 
 **Unity's Special Methods:**
 - `Start()` - Runs once when the game starts
@@ -126,16 +106,9 @@ A method is a reusable block of code that performs a specific task. Think of it 
    - Open Console window: Window → General → Console
    - Observe the messages (Stop after a few seconds!)
 
-5. **Clean Up**
-   - Comment out or delete the Debug.Log in Update (it's too frequent!)
-   - Keep the one in Start
-
-**💡 Key Takeaway**: Methods organize our code into logical chunks. Start() runs once for initialization, Update() runs continuously for frame-by-frame logic.
-
 ---
 
 ## **Section 3: Transform.Translate()**
-*Duration: ~8 minutes*
 
 ### Learning Objectives
 - Understand the Transform component
@@ -188,23 +161,6 @@ A method is a reusable block of code that performs a specific task. Think of it 
 ---
 
 ## **Section 4: Introducing Variables**
-*Duration: ~10 minutes*
-
-### Learning Objectives
-- Understand what variables are and their purpose
-- Learn about different variable types
-- Practice declaring and using variables
-
-### Conceptual Overview
-
-**What is a Variable?**
-A variable is a named container for storing data. Think of it like a labeled box where you can put values.
-
-**Common Types:**
-- `int` - Whole numbers (5, 100, -42)
-- `float` - Decimal numbers (5.5f, 3.14f)
-- `bool` - True or false
-- `string` - Text ("Hello")
 
 ### Steps
 
@@ -234,17 +190,9 @@ A variable is a named container for storing data. Think of it like a labeled box
    bool hasPackage = false;
    ```
 
-4. **Understanding Variable Naming**
-   - Use camelCase: `moveSpeed`, `turnSpeed`
-   - Be descriptive: `speed` is okay, but `playerMovementSpeed` is better
-   - No spaces allowed: `move speed` ❌ | `moveSpeed` ✅
-
-**💡 Key Takeaway**: Variables make code flexible and maintainable. Instead of hardcoding values, store them in variables you can easily change.
-
 ---
 
 ## **Section 5: Using SerializeField**
-*Duration: ~8 minutes*
 
 ### Learning Objectives
 - Understand public vs private variables
@@ -267,7 +215,7 @@ A variable is a named container for storing data. Think of it like a labeled box
    private float turnSpeed = 0.1f;      // Hidden in Inspector
    float rotationSpeed = 50f;           // Also private (default)
    ```
-
+   
 2. **Test in Unity**
    - Select Car GameObject
    - See moveSpeed in Inspector
@@ -310,16 +258,12 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 6: Keyboard Input & If Statements**
-*Duration: ~12 minutes*
 
 ### Learning Objectives
 - Handle keyboard input using Unity's Input System
-- Use conditional statements (if/else)
 - Implement basic player control
 
 ### Conceptual Overview
-
-**Conditional Statements**: Execute code only when certain conditions are true.
 
 **Unity Input System**: The modern way to handle player input in Unity.
 
@@ -411,12 +355,9 @@ A variable is a named container for storing data. Think of it like a labeled box
    }
    ```
 
-**💡 Key Takeaway**: If statements let us execute code conditionally. The Input System provides a modern, flexible way to handle player input.
-
 ---
 
 ## **Section 7: Moving Our Car**
-*Duration: ~10 minutes*
 
 ### Learning Objectives
 - Combine movement and rotation
@@ -470,7 +411,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 8: Using Time.deltaTime**
-*Duration: ~8 minutes*
 
 ### Learning Objectives
 - Understand frame-rate independence
@@ -533,7 +473,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 9: Colliders & Rigidbodies**
-*Duration: ~10 minutes*
 
 ### Learning Objectives
 - Understand Unity's physics system
@@ -601,7 +540,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 10: Using OnCollisionEnter2D()**
-*Duration: ~8 minutes*
 
 ### Learning Objectives
 - Detect collision events in code
@@ -680,7 +618,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 11: Using OnTriggerEnter2D()**
-*Duration: ~10 minutes*
 
 ### Learning Objectives
 - Understand the difference between Collisions and Triggers
@@ -761,7 +698,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 12: Introducing Cinemachine**
-*Duration: ~8 minutes*
 
 ### Learning Objectives
 - Install and configure Cinemachine
@@ -820,7 +756,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 13: Add Assets To Project**
-*Duration: ~15 minutes*
 
 ### Learning Objectives
 - Import sprite assets
@@ -880,7 +815,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 14: Car & Background**
-*Duration: ~12 minutes*
 
 ### Learning Objectives
 - Apply sprites to GameObjects
@@ -936,7 +870,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 15: Create A Level**
-*Duration: ~15 minutes*
 
 ### Learning Objectives
 - Design a game level
@@ -1000,7 +933,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 16: Add Collision Blocks**
-*Duration: ~10 minutes*
 
 ### Learning Objectives
 - Add collision to tilemaps
@@ -1051,7 +983,7 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 17: Using Tags In Unity**
-*Duration: ~12 minutes*
+
 
 ### Learning Objectives
 - Understand Unity's Tag system
@@ -1126,25 +1058,7 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 18: Introducing Bools**
-*Duration: ~8 minutes*
 
-### Learning Objectives
-- Understand boolean logic
-- Implement state tracking
-- Use bools for game mechanics
-
-### Conceptual Overview
-
-**Boolean (bool)**: A variable that can only be `true` or `false`
-- Perfect for on/off states
-- Used in conditionals
-- Tracks game state
-
-**Common Uses**:
-- Is player grounded?
-- Has power-up?
-- Is game paused?
-- Has key/package?
 
 ### Steps
 
@@ -1222,7 +1136,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 19: Introducing Prefabs**
-*Duration: ~8 minutes*
 
 ### Learning Objectives
 - Understand what Prefabs are
@@ -1291,7 +1204,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 20: How To Destroy Objects**
-*Duration: ~10 minutes*
 
 ### Learning Objectives
 - Use Destroy() function
@@ -1392,7 +1304,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 21: Using GetComponent**
-*Duration: ~10 minutes*
 
 ### Learning Objectives
 - Access other components via code
@@ -1518,7 +1429,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 22: Boosts & Bumps**
-*Duration: ~12 minutes*
 
 ### Learning Objectives
 - Implement speed boost mechanic
@@ -1643,7 +1553,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 23: Adding UI Text**
-*Duration: ~18 minutes*
 
 ### Learning Objectives
 - Create Canvas for UI
@@ -1774,7 +1683,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 24: Complete Delivery System**
-*Duration: ~15 minutes*
 
 ### Learning Objectives
 - Finalize package pickup/delivery system
@@ -1872,7 +1780,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 ---
 
 ## **Section 25: Polish & Optimization**
-*Duration: ~20 minutes*
 
 ### Learning Objectives
 - Add audio feedback
@@ -1991,26 +1898,6 @@ A variable is a named container for storing data. Think of it like a labeled box
 - Unity Learn: learn.unity.com
 - C# Documentation: docs.microsoft.com/dotnet/csharp
 - Game Dev communities: Reddit r/gamedev, Unity forums
-
-### Submission Requirements
-
-**Required Deliverables:**
-1. Complete Unity project (zipped)
-2. Playable build (Windows/Mac/WebGL)
-3. Design document (1-2 pages):
-   - Gameplay description
-   - Controls
-   - Features implemented
-   - Challenges faced
-   - What you learned
-4. Video demo (2-3 minutes)
-
-**Grading Criteria:**
-- Functionality (40%): Core mechanics work correctly
-- Code Quality (20%): Clean, commented, organized
-- Polish (20%): Visual/audio feedback, user experience
-- Creativity (10%): Unique additions or variations
-- Documentation (10%): Clear explanations and demo
 
 ---
 
