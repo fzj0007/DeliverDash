@@ -508,7 +508,7 @@
 
 3. **Add Rigidbody2D**
    - Add Component → Rigidbody 2D
-   - Set Body Type: Kinematic (we control movement, not physics)
+   - Set Body Type: Dynamic (we control movement, not physics)
    - Set Gravity Scale: 0 (no gravity in this game)
    - Check "Freeze Rotation Z" (prevent spinning on collision)
 
